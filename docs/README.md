@@ -1,3 +1,12 @@
-# Documentation
+# Lab Documentation
 
-Project documentation will be added here.
+## Architecture
+Lab architecture and network topology.
+
+## Systems
+- Splunk SIEM
+- Windows Endpoint
+- Linux / Network Sensor
+
+## Data Flow
+Endpoint → Sensor → Splunk → Detection → Investigation
