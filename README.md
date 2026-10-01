@@ -93,7 +93,7 @@ Planned technologies include:
 - SPL
 - Sigma
 - MITRE ATT&CK
-- Atomic Red Team
+- - [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)
 
 Additional tools may be added as the lab evolves.
 
