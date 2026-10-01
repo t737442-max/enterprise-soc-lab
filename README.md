@@ -58,21 +58,7 @@ The architecture will evolve as additional telemetry sources and detection capab
 
 The investigations in this project follow a structured workflow:
 
-Alert
-  ↓
-Validate
-  ↓
-Triage
-  ↓
-Collect Evidence
-  ↓
-Investigate
-  ↓
-Determine Severity
-  ↓
-Document Findings
-  ↓
-Escalate / Close
+Alert → Validate → Triage → Investigate → Assess → Document → Escalate / Close
 
 The goal is to practice the reasoning process used during real SOC investigations rather than simply identifying individual commands or indicators.
 
@@ -111,29 +97,6 @@ Planned technologies include:
 
 Additional tools may be added as the lab evolves.
 
-📂 Repository Structure
-
-SOC-Detection-Lab/
-│
-├── README.md
-│
-├── docs/
-│   └── Lab documentation
-│
-├── detections/
-│   └── Detection rules and queries
-│
-├── investigations/
-│   └── Incident investigations
-│
-├── lab/
-│   └── Lab configuration and setup
-│
-├── evidence/
-│   └── Investigation evidence and exported telemetry
-│
-└── screenshots/
-    └── Screenshots demonstrating the lab and investigations
 
 📊 Investigation Documentation
 
