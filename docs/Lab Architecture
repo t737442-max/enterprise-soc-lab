@@ -1,0 +1,41 @@
+# Lab Architecture
+
+## Environment
+
+The lab simulates a small enterprise SOC environment using isolated virtual machines.
+
+## Components
+
+- **Splunk Server** — SIEM and log analysis
+- **Windows Server / Domain Controller** — Active Directory and authentication
+- **Windows Endpoint** — Domain-joined endpoint and Sysmon
+- **Linux Router / Suricata IDS** — Network routing and intrusion detection
+- **Atomic Red Team** — Controlled adversary simulation
+
+## Network flow 
+
+                    ┌──────────────────────┐
+                    │   Windows Server     │
+                    │     AD / Domain      │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │   Windows Endpoint   │
+                    │      + Sysmon        │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │ Linux Router /       │
+                    │    Suricata IDS     │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │    Splunk Server     │
+                    │        SIEM          │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    Detection → Investigation
